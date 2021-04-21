@@ -1,0 +1,28 @@
+& when (@media-common = true) {
+    .test_block {
+        float: left;
+        width: 100%;
+
+        .dots,
+        .readMore {
+            display: inline;
+        }
+
+        .more,
+        .readLess {
+            display: none;
+        }
+
+        &.active {
+            .dots,
+            .readMore {
+                display: none;
+            }
+
+            .more,
+            .readLess {
+                display: inline;
+            }
+        }
+    }
+}

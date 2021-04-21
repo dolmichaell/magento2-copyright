@@ -1,0 +1,13 @@
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="footer">
+            <block class="Magento\Cms\Block\Block" name="cms_block" before="copyright">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">cms-block-1</argument>
+                </arguments>
+            </block>
+            <referenceBlock name="copyright" template="Magento_Theme::test.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
